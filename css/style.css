@@ -1,0 +1,23 @@
+#greeting {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 150px;
+    color: #ffffff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #cdcdcd;
+}
+
+.js-clock {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+    font-size: 30px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #cdcdcd;
+}
+
+#weather {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+    font-size: 30px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #cdcdcd;
+}

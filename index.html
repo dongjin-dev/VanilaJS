@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="stylesheet" href="/VanilaJS/style.css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    </head>
-    <body>
-        <h1>Time Until Christmas Eve</h1>
-        <h2 class="js-clock"></h2>
-        <script type="module" src="/VanilaJS/main.js"></script>
-    </body>  
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VanillaJS App</title>
+</head>
+
+<body>
+    <div>
+        <div id="login-container">
+            <div>
+                <div id="greeting" style="display: none;"></div>
+                <h2 class="js-clock"></h2>
+                <div id="weather"></div>
+            </div>
+
+        </div>
+
+        <div id="todo-container">
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Enter your name" required />
+                <button type="submit">Login</button>
+            </form>
+            <form id="todo-form">
+                <input type="text" id="todo-input" placeholder="Add a task" required />
+                <button type="submit">Add</button>
+            </form>
+            <ul id="todo-list"></ul>
+        </div>
+    </div>
+    <script src="js/config.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+
 </html>
