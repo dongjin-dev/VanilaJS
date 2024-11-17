@@ -1,6 +1,6 @@
 
 const weatherDiv = document.getElementById("weather");
-const API_KEY = window.env.API_KEY;
+const API_KEY = window.env?.API_KEY || "default_api_key";
 
 function getWeather(lat, lon) {
     fetch(

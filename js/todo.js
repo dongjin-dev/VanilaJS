@@ -16,6 +16,7 @@ function renderTodoList() {
         li.textContent = todo;
         const deleteBtn = document.createElement("button");
         deleteBtn.textContent = "X";
+        deleteBtn.type = "button"; // 버튼 기본 타입 명시
         deleteBtn.addEventListener("click", () => {
             savedTodos.splice(index, 1);
             saveTodos();
@@ -27,12 +28,12 @@ function renderTodoList() {
 }
 
 todoForm.addEventListener("submit", (event) => {
-    event.preventDefault();
+    event.preventDefault(); // 기본 동작 방지    
     const newTodo = todoInput.value;
     savedTodos.push(newTodo);
     saveTodos();
     renderTodoList();
-    todoInput.value = "";
+    todoInput.value = ""; // 입력창 초기화
 });
 
 renderTodoList();

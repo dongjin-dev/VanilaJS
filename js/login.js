@@ -16,6 +16,7 @@ function showGreeting(name) {
 
 loginForm.addEventListener("submit", (event) => {
     event.preventDefault();
+    event.stopPropagation();
     const username = usernameInput.value;
     localStorage.setItem("username", username);
     showGreeting(username);
